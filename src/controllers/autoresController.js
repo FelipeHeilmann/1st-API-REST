@@ -2,9 +2,9 @@ import autores from "../models/Autor.js";
 
 class AutorController{
 
-    static listarAutores = (req, res)=>{
-        autores.find((err, autores)=>{
-            res.status(200).json(autores)  
+    static listarAutores = async (req, res)=>{
+        autores.find((err, autores) => {
+            res.status(200).json(autores)
         })
     }
 
